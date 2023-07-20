@@ -1,0 +1,165 @@
+
+.under-header-text{
+    height: 272px;
+    background: #FDBD13;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.under-header-text h1{
+    font-family: 'Roboto';
+    width: fit-content;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 150px;
+    line-height: 100%;
+    letter-spacing: 0.02em;
+    -webkit-text-stroke: 3px #0B2360;
+    color: transparent;
+    animation: transitionIn 0.75s;
+}
+.image-div{
+    height: auto;
+    animation: transitionIn 0.75s;
+}
+.image-div img{
+    width: 100%;
+    height: auto;
+    left: 0;
+    top: 0;
+    animation: transitionIn 0.75s;
+}
+.gallery-images{
+    margin-top: -4px;
+    background: linear-gradient(180deg, #FDBD13 17.25%, #0B2360 93.12%) no-repeat;
+    columns: 2;
+}
+.gallery-images img{
+    width: 850px;
+    height: 1204px;
+    padding: 25px 25px 25px 25px;
+    margin-left: calc(50% - 450px);
+}
+.gallery-images p{
+    width: 551px;
+    height: 81px;
+    position: absolute;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #0B2360;
+    margin-top: -300px;
+    margin-left: 336px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url("../elements-svgs/photo-description.svg") no-repeat;
+}
+.gallery-images1{
+    background: linear-gradient(180deg, #FDBD13 17.25%, #0B2360 93.12%) no-repeat;
+    columns: 2;
+    margin-top: -4px;
+}
+.gallery-images1 img{
+    width: 850px;
+    height: 604px;
+    padding: 25px 25px 25px 25px;
+    margin-left: calc(50% - 450px);
+}
+.gallery-images1 p{
+    width: 551px;
+    height: 81px;
+    position: absolute;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    text-indent: 25px;
+    color: #1B1B1B;
+    margin-top: -200px;
+    margin-left: 336px;
+    display: flex;
+    justify-content: center;
+    background: url("../elements-svgs/photo-description.svg") no-repeat;
+}
+@media (max-aspect-ratio: 8/5) {
+    .under-header-text h1{
+        letter-spacing: -0.03em;
+        -webkit-text-stroke: 2px #0B2360;
+        font-size: 55px;
+        line-height: 150%;
+        width: 336px;
+    }
+    .under-header-text{
+        justify-content: center;
+        height: 168px;
+    }
+    .image-div{
+        height: auto;
+    }
+    .image-div img{
+        width: 100%;
+        height: auto;
+    }
+    .gallery-images1{
+        margin-top: -4px;
+        background: linear-gradient(180deg, #FDBD13 17.25%, #1F2547 93.12%) no-repeat;
+        columns: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .gallery-images1 img{
+        width: 351px;
+        height: auto;
+        margin-left: 0;
+        padding: 10px 10px;
+    }
+    .gallery-images1 p{
+        width: 273px;
+        height: 36px;
+        margin-top: -100px;
+        margin-left: 88px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 14px;
+        justify-content: flex-end;
+        align-items: center;
+        color: #0B2360;
+        background: url("../elements-svgs/photo-description1.svg") no-repeat;
+    }
+    .gallery-images{
+        margin-top: -4px;
+        background: linear-gradient(180deg, #FDBD13 17.25%, #1F2547 93.12%) no-repeat;
+        columns: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .gallery-images img{
+        width: 351px;
+        height: auto;
+        margin-left: 0;
+        padding: 10px 10px;
+    }
+    .gallery-images p{
+        width: 273px;
+        height: 36px;
+        margin-top: -150px;
+        margin-left: 88px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 14px;
+        justify-content: flex-end;
+        color: #0B2360;
+        background: url("../elements-svgs/photo-description1.svg") no-repeat;
+    }
+}

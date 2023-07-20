@@ -1,0 +1,256 @@
+.text{
+    height: 992px;
+    background: url("../elements-svgs/about-me/about-me-left.svg") no-repeat center, url(../elements-images/beton2.jfif) no-repeat center;
+    background-size: cover;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.text div{
+    width: 504px;
+    height: 872px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: inset 4px 4px 10px rgba(11, 35, 96, 0.15), inset -4px -4px 10px rgba(0, 0, 0, 0.15);
+    animation: transitionIn 0.75s;
+}
+.text h1{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    text-align: center;
+    color: #FDBD13;
+    margin-block-start: 32px;
+    margin-block-end: 24px;
+}
+.text p{
+    width: 480px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 23px;
+    text-indent: 12px;
+    color: #0B2360;
+    margin-block-end: 0;
+    margin-left: 15px;
+}
+.advantages{
+    position: relative;
+    height: 781px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: url("../elements-svgs/about-me/about-me-right.svg") no-repeat center;
+    background-size: cover;
+}
+.advantages h1{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 100%;
+    text-align: center;
+    color: #1B1B1B;
+    margin-block-start: 0;
+}
+.advantages-blocks{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    z-index: 5;
+}
+.advantages-subblock{
+    display: flex;
+    gap: 50px;
+}
+.advantages-subblock .block{
+    width: 624px;
+    height: 214px;
+    background: white;
+    border: 5px solid transparent;
+    border-image: linear-gradient(to left top, rgba(31, 37, 71, 0.5) ,rgba(31, 37, 71, 0), rgba(31, 37, 71, 0.5));
+    border-image-slice: 1;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.advantages-subblock .block h1{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #0B2360;
+    text-align: left;
+}
+.advantages-subblock .block p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(11, 35, 96, 0.9);
+    width: 400px;
+    text-align: left;
+}
+.guideline{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 1439px;
+    background: url("../elements-svgs/about-me/guidline.svg") no-repeat center;
+    gap: 50px;
+    margin-top: -5px;
+}
+.guideline svg{
+    margin-left: -160px;
+}
+.guideline .block{
+    width: 624px;
+    height: 214px;
+    border: 5px solid transparent;
+    border-image: linear-gradient(to left top,rgba(253, 189, 19, 1), rgba(253, 189, 19, 0), rgba(253, 189, 19, 1));
+    border-image-slice: 1;
+    background: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.guideline .block h1{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #0B2360;
+    text-align: left;
+    width: 400px;
+}
+.guideline .block p{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: rgba(11, 35, 96, 0.9);
+    width: 400px;
+    text-align: left;
+}
+.guideline .block svg{
+    margin-left: 0;
+}
+@media (max-aspect-ratio: 8/5) {
+    .text div{
+        width: 360px;
+        height: 506px;
+    }
+    .text h1{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .text p{
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        text-indent: 12px;
+        width: 312px;
+        margin-block-start: 2px;
+    }
+    .advantages-subblock{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .advantages-blocks{
+        gap: 10px;
+    }
+    .advantages-subblock .block{
+        width: 352px;
+        height: auto;
+        border: 3px solid transparent;
+        border-image: linear-gradient(to left top, rgba(31, 37, 71, 0.5) ,rgba(31, 37, 71, 0), rgba(31, 37, 71, 0.5));
+        border-image-slice: 1;
+        gap: 15px;
+    }
+    .advantages{
+        width: 100%;
+        height: 781px;
+    }
+    .advantages-subblock .block h1{
+        width: 288px;
+        height: 14px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 14px;
+        margin-block-end: 0;
+        padding-top: 10px;
+    }
+    .advantages-subblock .block p {
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        width: 288px;
+    }
+    .block svg{
+        width: 24px !important;
+        height: 24px !important;
+    }
+    .guideline{
+        width: 100%;
+        height: 757px;
+        gap: 30px;
+        background: url(../elements-svgs/about-me/guidline.svg) no-repeat top;
+    }
+    .guideline svg{
+        width: 375px;
+        height: 95px;
+    }
+    .guideline svg{
+        margin-left: -7px;
+        padding-bottom: 20px;
+    }
+    .guideline .block{
+        width: 360px;
+        height: auto;
+        border: 3px solid transparent;
+        border-image: linear-gradient(to left top,rgba(253, 189, 19, 1), rgba(253, 189, 19, 0), rgba(253, 189, 19, 1));
+        border-image-slice: 1;
+        gap: 15px;
+    }
+    .guideline .block h1{
+        width: 288px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 14px;
+        color: #0B2360;
+    }
+    .guideline .block p{
+        width: 288px;
+
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        color: rgba(11, 35, 96, 0.9);
+    }
+}
